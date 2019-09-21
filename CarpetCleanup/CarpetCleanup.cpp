@@ -12,8 +12,14 @@ int main()
 	const double taxRate{ .06 };
 	const double estimateExpiry{ 30 };
 
-	cout << "Please enter number of small rooms: " << endl;
+	cout << "Please enter number of small rooms: ";
 	cin >> smallRooms;
+	cout << "Please enter number of large rooms: ";
+	cin >> largeRooms;
+	cout << "Estimate for carpet cleaning sevice: " << endl;
+	cout << "Number of small rooms: " << smallRooms << endl;
+	cout << "Number of large rooms: " << largeRooms << endl;
+
 
 	return 0;
 }
