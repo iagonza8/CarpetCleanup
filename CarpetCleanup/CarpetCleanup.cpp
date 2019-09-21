@@ -19,6 +19,8 @@ int main()
 	cout << "Estimate for carpet cleaning sevice: " << endl;
 	cout << "Number of small rooms: " << smallRooms << endl;
 	cout << "Number of large rooms: " << largeRooms << endl;
+	cout << "Price per small room: $" << smallRoomPrice << endl;
+	cout << "Price per large room: $" << largeRoomPrice << endl;
 
 
 	return 0;
