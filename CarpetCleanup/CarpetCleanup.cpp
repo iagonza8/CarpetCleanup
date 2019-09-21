@@ -1,16 +1,15 @@
 #include <iostream>
-using std::cout;
-using std::cin;
-using std::endl;
+using namespace std;
 
 int main()
 {
 	int smallRooms;
 	int largeRooms;
+	double total;
+	double estimate;
 	const double smallRoomPrice{ 25 };
 	const double largeRoomPrice{ 35 };
 	const double taxRate{ .06 };
-	const double estimateExpiry{ 30 };
 
 	cout << "Please enter number of small rooms: ";
 	cin >> smallRooms;
@@ -21,7 +20,11 @@ int main()
 	cout << "Number of large rooms: " << largeRooms << endl;
 	cout << "Price per small room: $" << smallRoomPrice << endl;
 	cout << "Price per large room: $" << largeRoomPrice << endl;
-
-
+	total = (smallRoomPrice * smallRooms) + (largeRoomPrice * largeRooms);
+	cout << "Cost: $" << total << endl;
+	cout << "Tax : $" << taxRate * total << endl;
+	cout << "========================================" << endl;
+	cout << "Total estimate: $" << (taxRate * total) + total << endl;
+	cout << "This estimate is valid for 30 days.";
 	return 0;
 }
